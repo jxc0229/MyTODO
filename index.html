@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List Website</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container-fluid mt-5">
+    <div class="row">
+      <!-- Sidebar -->
+      <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+        <div class="sidebar-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#" id="eisenhower-matrix-link">Eisenhower Matrix</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="time-link">Time</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="priority-link">Priority</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Todo list -->
+      <main role="main" class="col-md-10 ml-sm-auto col-lg-10 px-4 main-content">
+        <div class="todo-list-grid">
+          <div class="todo-list" id="todo-list-1">
+            <h2 class="text-center">High Priority and High Urgency</h2>
+            <div class="input-container" data-list-id="1">
+              <input type="text" class="form-control" placeholder="Add New Task">
+              <button id="addTaskButton" class="btn btn-primary ml-2" data-list-id="1">Add Task</button>
+            </div>
+            <ul class="list-group" list-id="1">
+              <li class="list-group-item"><input type="checkbox" class="task-checkbox"> Task 1 </li>
+              <li class="list-group-item"><input type="checkbox" class="task-checkbox"> Task 2 </li>
+              <li class="list-group-item"><input type="checkbox" class="task-checkbox"> Task 3 </li>
+            </ul>
+          </div>
+
+          <div class="todo-list" id="todo-list-2">
+            <h2 class="text-center">High Priority and Low Urgency</h2>
+            <div class="input-container" data-list-id="2">
+              <input type="text" class="form-control" placeholder="Add New Task">
+              <button id="addTaskButton" class="btn btn-primary ml-2" data-list-id="2">Add Task</button>
+            </div>
+            <ul class="list-group" list-id="2">
+              <li class="list-group-item"><input type="checkbox" class="task-checkbox"> Task 1 </li>
+              <li class="list-group-item"><input type="checkbox" class="task-checkbox"> Task 2 </li>
+              <li class="list-group-item"><input type="checkbox" class="task-checkbox"> Task 3 </li>
+            </ul>
+          </div>
+
+          <div class="todo-list" id="todo-list-3">
+            <h2 class="text-center">Low Priority and High Urgency</h2>
+            <div class="input-container" data-list-id="3">
+              <input type="text" class="form-control" placeholder="Add New Task">
+              <button id="addTaskButton" class="btn btn-primary ml-2" data-list-id="3">Add Task</button>
+            </div>
+            <ul class="list-group" list-id="3">
+              <li class="list-group-item"><input type="checkbox" class="task-checkbox"> Task 1 </li>
+              <li class="list-group-item"><input type="checkbox" class="task-checkbox"> Task 2 </li>
+              <li class="list-group-item"><input type="checkbox" class="task-checkbox"> Task 3 </li>
+            </ul>
+          </div>
+
+          <div class="todo-list" id="todo-list-4">
+            <h2 class="text-center">Low Priority and Low Urgency</h2>
+            <div class="input-container" data-list-id="4">
+              <input type="text" class="form-control" placeholder="Add New Task">
+              <button id="addTaskButton" class="btn btn-primary ml-2" data-list-id="4">Add Task</button>
+            </div>
+            <ul class="list-group" list-id="4">
+              <li class="list-group-item"><input type="checkbox" class="task-checkbox"> Task 1 </li>
+              <li class="list-group-item"><input type="checkbox" class="task-checkbox"> Task 2 </li>
+              <li class="list-group-item"><input type="checkbox" class="task-checkbox"> Task 3 </li>
+          </div>
+        </div>
+      </main>
+
+
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Custom JS -->
+  <script src="main.js"></script>
+</body>
+
+</html>
